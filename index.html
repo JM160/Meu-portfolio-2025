@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfólio | João Matheus</title>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header class="header">
         <nav class="nav">
             <span class="logo">&lt;JM&gt;</span>
@@ -28,7 +28,6 @@
         <section class="hero">
 
             <div class="hero-left">
-
                 <div class="hero-text">
                     <h1>
                         Olá, me chamo <span class="destaque">Matheus</span>
@@ -37,61 +36,60 @@
                     <h2>Sou um aspirante a Desenvolvedor.</h2>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Atualmente estudo desenvolvimento web, focado na criação de interfaces limpas, responsivas e
+                        acessíveis com HTML e CSS. Tenho interesse em aprender continuamente e transformar ideias em
+                        projetos bem estruturados.
                     </p>
                 </div>
-
-                <div class="hero-cards">
-                    <article class="hero-card">
-                        <span>Projeto 1</span>
-                    </article>
-
-                    <article class="hero-card">
-                        <span>Projeto 2</span>
-                    </article>
-                </div>
-
             </div>
 
             <div class="hero-right">
-
                 <h3 class="skills-title">Habilidades</h3>
 
                 <div class="skills-grid">
-
                     <article class="skill-card">
-                        <img src="" alt="HTML5">
+                        <img src="assets/icons/html-5.svg" alt="HTML5">
                         <span>HTML</span>
                     </article>
 
                     <article class="skill-card">
-                        <img src="" alt="CSS3">
+                        <img src="assets/icons/css.svg" alt="CSS3">
                         <span>CSS</span>
                     </article>
 
                     <article class="skill-card">
-                        <img src="" alt="JavaScript">
+                        <img src="assets/icons/javascript.svg" alt="JavaScript">
                         <span>JS</span>
                     </article>
 
                     <article class="skill-card">
-                        <img src="" alt="Git">
+                        <img src="assets/icons/git.svg" alt="Git">
                         <span>GIT</span>
                     </article>
-
                 </div>
-
             </div>
 
         </section>
 
-        <section id="sobre" class="section">
-            <h2>Sobre</h2>
+        <section id="sobre" class="section sobre">
 
-            <p>
-                Meu nome é João Matheus, atualmente trilho minha jornada na renomada Alpha Ed-Tech em busca de me tornar um futuro desenvolvedor.
-            </p>
+            <div class="sobre-container">
+
+                <div class="sobre-texto">
+                    <h2>Sobre</h2>
+
+                    <p>
+                        Meu nome é João Matheus, atualmente trilho minha jornada na renomada
+                        Alpha Ed-Tech em busca de me tornar um futuro desenvolvedor.
+                    </p>
+                </div>
+
+                <div class="sobre-foto">
+                    <img src="assets/img/perfil.jpg" alt="Foto de João Matheus">
+                </div>
+
+            </div>
+
         </section>
 
         <section id="projetos" class="section">
@@ -100,17 +98,17 @@
             <div class="projetos-container">
 
                 <article class="projeto-card">
-                    <img src="" alt="Preview do projeto 1">
-                    <h3>Landing Page</h3>
-                    <p>Landing page responsiva feita com HTML e CSS.</p>
-                    <a href="" target="_blank">Ver projeto</a>
+                    <img src="assets/img/exemplo1.png" alt="Preview do projeto Fanpage">
+                    <h3>Fanpage</h3>
+                    <p>Fanpage responsiva feita com HTML e CSS.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
                 </article>
 
                 <article class="projeto-card">
-                    <img src="" alt="Preview do projeto 2">
-                    <h3>lorem</h3>
-                    <p>lorem</p>
-                    <a href="" target="_blank">Ver projeto</a>
+                    <img src="assets/img/exemplo2.png" alt="Preview do projeto Lorem">
+                    <h3>Página de exibição de vídeo</h3>
+                    <p>Página feita com HTML e CSS para exibição de vídeos</p>
+                    <a href="projetos/Ativ01 - HTML/Q1.html" target="_blank">Ver projeto</a>
                 </article>
 
             </div>
@@ -119,20 +117,28 @@
         <section id="contato" class="section">
             <h2>Contato</h2>
 
-            <p>Onde me encontrar:</p>
+            <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
 
-            <ul class="contato-links">
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
-                        GitHub
-                    </a>
-                </li>
-            </ul>
+            <form class="contato-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+
+            </form>
         </section>
 
     </main>
@@ -148,13 +154,13 @@
 
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                        LinkedIn
+                    <a href="https://www.linkedin.com/in/jo%C3%A3o-matheus-pereira-andrade-6b3373397/" target="_blank" aria-label="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
-                        GitHub
+                    <a href="https://github.com/JM160" target="_blank" aria-label="GitHub">
+                        <img src="assets/icons/github.svg" alt="Github">
                     </a>
                 </li>
             </ul>
